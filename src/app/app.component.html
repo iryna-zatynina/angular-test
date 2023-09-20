@@ -6,6 +6,7 @@
     type="text"
     class="mb-2 border py-2 px-4 w-full"
     placeholder="Filter products..."
+    [(ngModel)]="term"
   >
   <p *ngIf="loading" class="text-center text-lg">Loading...</p>
 
@@ -17,6 +18,7 @@
   </div>
 
   <app-modal title="Create new product">
+    <app-create-product></app-create-product>
   </app-modal>
 </div>
 <router-outlet></router-outlet>
